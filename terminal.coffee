@@ -14,7 +14,7 @@ render: (output) -> """
 """
 
 update: (output) ->
-    output = "vecnehladny\nMon April 13 2020\n15:02\n70%"
+    #output = "vecnehladny\nMon April 13 2020\n15:02\n70%"
     data = output.split('\n')
     
     hashCount = data[3].replace("%", '')/10
@@ -46,6 +46,7 @@ style: (->
     width: 100%
     height: 100%
     white-space: nowrap;
+
     text-shadow: 0 0 #{brightness}px rgba(255,255,255,0.8)
 
     #terminal
@@ -54,7 +55,6 @@ style: (->
 
     .wrapper
       font-family: Menlo
-      //background-color: #212121
       position: absolute
       width: auto
       top: 50%
